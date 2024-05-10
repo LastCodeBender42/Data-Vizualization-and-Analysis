@@ -15,4 +15,4 @@ In the context of protein structure networks and drug development, scatterplots 
 
 Overall, scatterplots of different measures of network centrality play a valuable role in protein structure networks and drug development by aiding in the identification of important residues or regions, understanding structural connectivity, prioritizing druggable sites, exploring protein dynamics, and informing rational drug design strategies.
 
-This information was generated with the assistance of OpenAI's GPT-3 language model.
+#### This information was generated with the assistance of OpenAI's GPT-3 language model.
