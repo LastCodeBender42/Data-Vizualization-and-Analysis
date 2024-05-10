@@ -4,6 +4,5 @@ networkx==3.1
 plotly==5.9.0
 scipy==1.11.4
 dash==2.15.0
-ipywidgets==7.5.0
 ipython==8.10.0
 
