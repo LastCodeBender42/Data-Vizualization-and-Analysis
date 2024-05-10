@@ -1,5 +1,4 @@
 # Data Vizualization and Analysis
-Examples of data analysis on protein structure networks 
 
 Thank you for visiting my code repository! I have organized these Jupyter Notebooks to be hosted on Binder, a platform that provides cloud-based environments for running code interactively. One thing to note is that when launching a Binder environment, it may take a few minutes for the Docker image to start up and for the environment to become fully accessible.
 
