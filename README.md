@@ -18,6 +18,7 @@ the Binder homepage will appear displaying the docker initialization:
 
 
 Once the Jupyter Lab opens, run each of the cells by pressing `SHIFT + RETURN` 
+
 <br>
 <img src="./img/jupyter_lab.png" alt="Binder">
 <br>
