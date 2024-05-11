@@ -2,7 +2,7 @@
 
 
 <br>
-<img src="./data/startAnalysis.png" alt="Start Analysis">
+<img src=".img/network_comparisons_multiplot.png" alt="Multiplot">
 <br>
 
 
