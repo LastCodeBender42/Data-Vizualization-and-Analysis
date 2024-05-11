@@ -4,13 +4,13 @@
 
 Thank you for visiting my code repository! I have organized these Jupyter Notebooks to be hosted on Binder, a platform that provides cloud-based environments for running code interactively. One thing to note is that when launching a Binder environment, it may take a few minutes for the Docker image to start up and for the environment to become fully accessible. This startup time is normal and can vary depending on factors such as the size of the environment and the availability of resources. I wanted to mention this in advance to avoid confusion or misunderstanding.
 
-After selecting "Launch Binder" 
+After selecting the "launch binder" widget 
 
 <br>
 <img src="./img/launch_binder.png" alt="Binder">
 <br>
 
-the Binder Binder homepage will appear 
+the Binder homepage will appear dis[playing the docker initialization
 
 <br>
 <img src="./img/binder_homepage.png" alt="Binder">
