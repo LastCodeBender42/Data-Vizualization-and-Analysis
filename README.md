@@ -17,10 +17,16 @@ the Binder homepage will appear displaying the docker initialization:
 <br>
 
 
-Once the Jupyter Lab opens, run each of the cells by pressing `SHIFT + RETURN` and the last cell will display the visualization.
-
+Once the Jupyter Lab opens, run each of the cells by pressing `SHIFT + RETURN` 
 <br>
 <img src="./img/jupyter_lab.png" alt="Binder">
 <br>
+
+and the last cell will display the visualization:
+
+<br>
+<img src="./img/network_comparisons_multiplot.png" alt="Multiplot">
+<br>
+
 
 If you have any questions or concerns about this, please feel free to let me know. Looking forward to our discussion!
