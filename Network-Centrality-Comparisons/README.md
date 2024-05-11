@@ -2,7 +2,7 @@
 
 
 <br>
-<img src=".img/network_comparisons_multiplot.png" alt="Multiplot">
+<img src="./img/network_comparisons_multiplot.png" alt="Multiplot">
 <br>
 
 
