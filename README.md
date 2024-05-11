@@ -20,7 +20,7 @@ the Binder homepage will appear displaying the docker initialization:
 Once the Jupyter Lab opens, run each of the cells by pressing `SHIFT + RETURN` and the last cell will display the visualization.
 
 <br>
-<img src="./img/launch_binder.png" alt="Binder">
+<img src="./img/jupyter_lab.png" alt="Binder">
 <br>
 
 If you have any questions or concerns about this, please feel free to let me know. Looking forward to our discussion!
