@@ -1,6 +1,11 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LastCodeBender42/Data-Vizualization-and-Analysis.git/main?labpath=Network-Centrality-Comparisons%2Fnetwork_centrality_comparisons.ipynb)
 
 
+<br>
+<img src="./data/startAnalysis.png" alt="Start Analysis">
+<br>
+
+
 In the context of protein structure networks and drug development, scatterplots of different measures of network centrality, such as betweenness and closeness, can serve several purposes:
 
 1. **Identifying Important Residues or Regions**: In protein structure networks, amino acid residues or regions can be represented as nodes, and interactions between residues can be represented as edges. By plotting different measures of network centrality for each residue or region, such as betweenness and closeness, researchers can identify important residues or regions that are critical for the stability, function, or interactions of the protein structure. These important residues may serve as potential drug binding sites or targets for drug development.
