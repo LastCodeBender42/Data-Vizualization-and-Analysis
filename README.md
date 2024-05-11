@@ -23,7 +23,7 @@ Once the Jupyter Lab opens, run each of the cells by pressing `SHIFT + RETURN`
 <img src="./img/jupyter_lab.png" alt="Binder">
 <br>
 
-and the last cell will display the visualization:
+and, after the last cell is run, the interactive data visualization will display:
 
 <br>
 <img src="./img/network_comparisons_multiplot.png" alt="Multiplot">
