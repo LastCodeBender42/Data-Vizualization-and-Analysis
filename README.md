@@ -13,7 +13,7 @@ After selecting "Launch Binder"
 the Binder Binder homepage will appear 
 
 <br>
-<img src="./img/binder_splash.png" alt="Binder">
+<img src="./img/binder_homepage.png" alt="Binder">
 <br>
 
 
