@@ -5,3 +5,4 @@ plotly==5.9.0
 scipy==1.11.4
 ipython==7.30.0
 ipywidgets==8.0.0
+dash==2.0.0
