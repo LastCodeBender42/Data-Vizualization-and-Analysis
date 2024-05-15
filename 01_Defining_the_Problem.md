@@ -1,1 +1,3 @@
-# Kiss my Butt!!
+# Defining the Problem:
+
+**Introduction to the researcher:** Dr. Ray Blind is a professor with Vanderbilt University Medical Center and School of Medicine. Among other things, Dr. Blind's research focuses on the development of novel compounds targeting nuclear signaling enzymes in cancer and diabetes. One of the proteins of interest is the liver receptor homologue-1 (LRH-1) protein. LRH-1 activation is associated with antidiabetic effects. After scanning a library of 2340 small molecules, Dr. Blind identified a set of 15 that regulated LRH-1. However, he encountered an experimental observation that was difficult to reconcile with current expectations regarding ligand binding and regulation. Further 
