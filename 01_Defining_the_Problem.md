@@ -45,6 +45,6 @@ It is noteworthy that the characteristic low vs high &Delta;&Delta;G<sub>XSTAL</
 
 # The proposition:
 
-Previously, I published a paper using network analysis to characterize conformational changes in protein structure networks for two other protein systems, constitutive androstane receptor (CAR) and ribonucleotide reductase (RNR). In this work I compared four measures of network centrality to quantify changes in residue-residue contacts from molecular dynamics (MD) simulations. I was welcomed by Dr. Blind to see what if any insights network analysis might yield.
+Previously, I published a [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8246261/pdf/main.pdf) using network analysis to characterize conformational changes in protein structure networks for two other protein systems, constitutive androstane receptor (CAR) and ribonucleotide reductase (RNR). In this work I compared four measures of network centrality to quantify changes in residue-residue contacts from molecular dynamics (MD) simulations. I was welcomed by Dr. Blind to see what if any insights network analysis might yield.
 
 
