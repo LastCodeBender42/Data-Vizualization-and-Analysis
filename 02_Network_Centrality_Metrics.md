@@ -1,6 +1,8 @@
 # Network Centrality Metics
 
-## 01. Network Centrality as a Metric of Topology
+## Network Centrality as a Metric of Topology
+
+## Betweenness Centrality
 
 Betweenness Centrality (BC) is a measure that utilizes the definition of shortest path
 to assign significance to vertices. In descriptive terms, the BC of a vertex vi
@@ -19,3 +21,29 @@ important for maintaining the global connectivity of the graph. Vertices with la
 decrease the overall average path length and diameter of the graph. BC also contributes to
 the rate of diffusion on graphs. Vertices with large BC increase the rate of diffusion across
 the graph due to reduced average path lengths.
+
+## Closeness Centrality
+
+Closeness Centrality (CC) is a measure that identifies vertices that have the shortest
+paths to all other nodes. In other words, these are the vertices that are at the geodesic
+“center” of the graph. CC is defined as
+C(vi) = 1
+PN
+j
+d(vi
+, vj )
+, (2.9)
+where d(vi
+, vj ) is the distance between vi and all other vertices j in G. This definition of CC
+implies that the largest possible CC for vi
+in G is C(vi) = 1
+N
+and C(vi) → 0 for vertices at
+the graph periphery. Note: A vertex that is close to the center of a graph will have a CC
+approximately equal to the radius of the graph. Given the definition of CC, the question
+arises as to whether BC and CC are somewhat redundant. It can be the case that nodes
+that are ‘close’ are also ’between’, but that is not necessarily the case. But, the principle
+difference between CC and BC are at the end points of the distances measured. BC evaluates
+the shortest path from vh through vi to vj and CC begins at vi and evaluates the distance
+to every other vertex vj
+.
