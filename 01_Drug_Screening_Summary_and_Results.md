@@ -1,3 +1,5 @@
+# Drug Screening Project: Summary and Results
+
 ## 01. Background:
 
 LRH-1 (Liver Receptor Homolog-1), also known as NR5A2 (Nuclear Receptor Subfamily 5 Group A Member 2), plays important roles in glucose metabolism and insulin sensitivity, making it relevant to the understanding of diabetes. Studies have suggested that LRH-1 may be implicated in the pathogenesis of type 2 diabetes mellitus (T2DM). Altered expression or activity of LRH-1 has been observed in animal models of diabetes and in individuals with T2DM. LRH-1 dysregulation may contribute to insulin resistance, impaired glucose tolerance, and other metabolic abnormalities associated with diabetes.
@@ -10,9 +12,9 @@ LRH-1 (Liver Receptor Homolog-1), also known as NR5A2 (Nuclear Receptor Subfamil
 
 ---
 
-## 02. A Novel Method for Screening and Prioritizing Drug Candidates:
+## 02. Screening and Prioritizing Drug Candidates:
 
-To identify potential activators of LRH-1 The Blind Lab performed wet lab experiments which scanned a library of 2322 compounds. Dr. Blind identified a set of 58 that positively regulated LRH-1 in cells. Through further computational investigation, a potentially novel method for ranking drug candidates as potential regulators for LRH-1 was developed. Denoted by &Delta;&Delta;G this method is given as 
+To identify potential activators of LRH-1 The Blind Lab performed wet lab experiments which scanned a library of 2322 compounds. During this process, Dr. Blind identified a set of 58 compounds that positively regulated LRH-1 in cells. Through further computational investigation, ***a novel method*** for ranking drug candidates as potential regulators for LRH-1 was developed. Denoted by &Delta;&Delta;G this method is given as 
 
 <h3 align="center">
   &Delta;&Delta;G = |&Delta;G<sub>FL</sub>| - |&Delta;G<sub>LBD</sub>|
