@@ -5,7 +5,7 @@ Drug screening methods are crucial in the process of discovering and developing 
 ## Contents:
 - [LRH-1: A Target for Diabetes Treatment](#lrh-1-a-target-for-diabetes-treatment)
 - [Screening and Prioritizing Drug Candidates](#screening-and-prioritizing-drug-candidates)
-- [&Delta;&Delta;G<sub>XSTAL</sub> for Small Molecules vs. Phospholipids](#small-molecules-vs.-phospholipids)
+- [Binding Energy for Small Molecules vs. Phospholipids](#binding-energy-for-small-molecules-vs-phospholipids)
 - Network Analysis of LRH-1 Protein Structure Networks
 - Network Analysis Identifies Mechanisms Driving &Delta;&Delta;G<sub>XSTAL</sub>
 - Relevance to My Professional Experience
@@ -44,7 +44,7 @@ where
 
 <h3>The significance:</h3> Given the positive association between higher &Delta;&Delta;G values and LRH-1 regulation, then it would make sense that future investigations would prioritize candidates ranked by higher &Delta;&Delta;G.
 
-## &Delta;&Delta;G<sub>XSTAL</sub> for Small Molecules vs. Phospholipids
+## Binding Energy for Small Molecules vs. Phospholipids
 
 Physical mechanisms driving the &Delta;&Delta;G were investigated by docking each of the 58 compounds to the 18 crystal structures. Of the 18, 9 were co-crystalized with small molecules and 9 with phospholipids. Then the &Delta;&Delta;G for each of the 58 compounds were averaged for each crystal structure so that a new metric denoted by &Delta;&Delta;G<sub>XSTAL</sub> was created for each structure. (Fig 2). regardless of LRH-1 regulation the phospholipid structures possessed a &Delta;&Delta;G<sub>XSTAL</sub> $\leq$ 1.0 and small molecule structures a &Delta;&Delta;G<sub>XSTAL</sub> $\geq$ 2.0.
 
