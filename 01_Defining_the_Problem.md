@@ -51,11 +51,11 @@ Previously, I had published a [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/
 
 To begin, I averaged eigenvector centrality values across all amino acids in each secondary structural element of LRH-1. Then I applied principal component analysis to analyze this multi-dimensional data. I found that the variance in PC1 formed two distinct clusters: 1) low &Delta;&Delta;G<sub>XSTAL</sub> structures bound by phospholipids and 2)  high &Delta;&Delta;G<sub>XSTAL</sub> structures bound by synthetic small molecules. (Fig 3A). This result demonstrates that the topology, or architecture, of the PSNs reflects the unique underlying structure of the two groups of crystal structures, small molecule vs. phospholipid.
 
-Next, I examined the network edges unique to each of the two groups of crystal structures. Clear differences exist between the low vs. high &Delta;&Delta;G<sub>XSTAL</sub> values. (Fig 3B). Specifically, that the nine structures with the highest &Delta;&Delta;G<sub>XSTAL</sub> values favor Helix 6 having a position that constricts the entrance to the ligand binding pocket. Whereas the nine structures with lowest &Delta;&Delta;G<sub>XSTAL</sub> values showed the opposite positioning and opens up the entrance to the ligand binding pocket. This would have a direct effect on the physical ability of the 58 test compounds to bind in the ligand binding pocket. 
+Next, I examined the network edges that are unique to each of the two groups of crystal structures. These edges were then mapped onto visualizations of the 3D protein structure so that the network's relationship to the physical structure of the protein is evident. On visual inspection, clear differences exist between the low vs. high &Delta;&Delta;G<sub>XSTAL</sub>, or small molecule vs. phospholipid groups. (Fig 3B). Specifically, the nine structures with the highest &Delta;&Delta;G<sub>XSTAL</sub> values, the small-molecule group, favor Helix 6 having a position that constricts the entrance to the ligand binding pocket. Whereas the nine structures with lowest &Delta;&Delta;G<sub>XSTAL</sub> values, the phospholipid group, showed the opposite positioning which opens up the entrance to the ligand binding pocket. This would has a direct effect on the physical ability of the 58 test compounds to bind in the ligand binding pocket and would, therefore, effect their binding energy differentially. 
 
 ---
 <img width="1126" alt="image" src="https://github.com/LastCodeBender42/Data-Vizualization-and-Analysis/assets/159676076/cf8cf236-20e4-4f43-92ba-1b936495d3fe">
 
-**Figure 3.** .
+**Figure 3.** Eigenvector centraility clusters small molecule and phospholipid PSNs and identifies physical mechanisms associated with low vs. high &Delta;&Delta;G<sub>XSTAL</sub> values.
 
 ---
