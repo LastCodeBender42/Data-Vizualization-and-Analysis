@@ -4,12 +4,11 @@ Drug screening methods are crucial in the process of discovering and developing 
 
 ## Contents:
 - [LRH-1: A Target for Diabetes Treatment](#lrh-1-a-target-for-diabetes-treatment)
-- Screening and Prioritizing Drug Candidates
+- [Screening and Prioritizing Drug Candidates](#screening-and-prioritizing-drug-candidates)
 - &Delta;&Delta;G<sub>XSTAL</sub> for Small Molecules vs. Phospholipids
 - Network Analysis of LRH-1 Protein Structure Networks
 - Network Analysis Identifies Mechanisms Driving &Delta;&Delta;G<sub>XSTAL</sub>
 - Relevance to My Professional Experience
-# [link](#what-the-hell)
 
 ## LRH-1: A Target for Diabetes Treatment
 
@@ -79,4 +78,3 @@ Next, I examined the network edges that are unique to each of the two groups of 
 
 I am not a structural biologist. I do not have a background in structural biology. However, I have demonstrated the ability to apply my analytical skill set to highly specialized fields to generate results that give explanation to complex phenomena. 
 
-## What the Hell?
