@@ -1,6 +1,6 @@
 # Network Centrality Metics
 
-## 01 Network Centrality as a Metric of Topology
+## 01. Network Centrality as a Metric of Topology
 
 Betweenness Centrality (BC) is a measure that utilizes the definition of shortest path
 to assign significance to vertices. In descriptive terms, the BC of a vertex vi
