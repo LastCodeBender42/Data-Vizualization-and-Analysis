@@ -59,3 +59,7 @@ Next, I examined the network edges that are unique to each of the two groups of 
 **Figure 3.** Eigenvector centraility clusters small molecule and phospholipid PSNs and identifies physical mechanisms associated with low vs. high &Delta;&Delta;G<sub>XSTAL</sub> values.
 
 ---
+
+## 06. Significance of This Project to My Background:
+
+I am not a structural biologist. I do not have a background in structural biology. However, I have demonstrated the ability to apply my analytical skill set to highly specialized fields to generate results that give explanation to complex phenomena. 
