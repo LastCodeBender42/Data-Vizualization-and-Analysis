@@ -9,7 +9,7 @@ Drug screening methods are crucial in the process of discovering and developing 
 - Network Analysis of LRH-1 Protein Structure Networks
 - Network Analysis Identifies Mechanisms Driving &Delta;&Delta;G<sub>XSTAL</sub>
 - Relevance to My Professional Experience
-# [link]((#what-the-hell))
+# [link](#what-the-hell)
 
 ## LRH-1: A Target for Diabetes Treatment
 
