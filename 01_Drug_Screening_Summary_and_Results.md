@@ -6,9 +6,9 @@ Drug screening methods are crucial in the process of discovering and developing 
 - [LRH-1: A Target for Diabetes Treatment](#lrh-1-a-target-for-diabetes-treatment)
 - [Screening and Prioritizing Drug Candidates](#screening-and-prioritizing-drug-candidates)
 - [Binding Energy for Small Molecules vs. Phospholipids](#binding-energy-for-small-molecules-vs-phospholipids)
-- Network Analysis of LRH-1 Protein Structure Networks
-- Network Analysis Identifies Mechanisms Driving &Delta;&Delta;G<sub>XSTAL</sub>
-- Relevance to My Professional Experience
+- [Network Analysis of LRH-1 Protein Structure Networks](#network-analysis-of-lrh-1-protein-structure-networks)
+- [Network Analysis Identifies Mechanisms Driving Differential Binding Energy](#network-analysis-identifies-mechanisms-driving-differential-binding-energy)
+- [Relevance to My Professional Experience](#relevance-to-my-professional-experience)
 
 ## LRH-1: A Target for Diabetes Treatment
 
@@ -61,7 +61,7 @@ It is noteworthy that the characteristic low vs. high &Delta;&Delta;G<sub>XSTAL<
 
 Previously, I had published a [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8246261/pdf/main.pdf) using network analysis to characterize conformational changes in protein structure networks for two other protein systems, constitutive androstane receptor (CAR) and ribonucleotide reductase (RNR). In this work I compared four measures of network centrality to quantify changes in residue-residue contacts from molecular dynamics (MD) simulations. Based on our discussions Dr. Blind was intrigued by the possibility of using network analysis to understand what structural changes were driving the consistency in low vs high &Delta;&Delta;G<sub>XSTAL</sub> values.
 
-## Network Analysis Identifies Mechanisms Driving &Delta;&Delta;G<sub>XSTAL</sub> 
+## Network Analysis Identifies Mechanisms Driving Differential Binding Energy
 
 To begin, I averaged eigenvector centrality values across all amino acids in each secondary structural element of LRH-1. Then I applied principal component analysis to analyze this multi-dimensional data. I found that the variance in PC1 formed two distinct clusters: 1) low &Delta;&Delta;G<sub>XSTAL</sub> structures bound by phospholipids and 2)  high &Delta;&Delta;G<sub>XSTAL</sub> structures bound by synthetic small molecules. (Fig 3A). This result demonstrates that the topology, or architecture, of the PSNs reflects the unique underlying structure of the two groups of crystal structures, small molecule vs. phospholipid.
 
