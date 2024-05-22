@@ -5,7 +5,7 @@ Drug screening methods are crucial in the process of discovering and developing 
 ## Contents:
 - [LRH-1: A Target for Diabetes Treatment](#lrh-1-a-target-for-diabetes-treatment)
 - [Screening and Prioritizing Drug Candidates](#screening-and-prioritizing-drug-candidates)
-- &Delta;&Delta;G<sub>XSTAL</sub> for Small Molecules vs. Phospholipids
+- [&Delta;&Delta;G<sub>XSTAL</sub> for Small Molecules vs. Phospholipids](#small-molecules-vs.-phospholipids)
 - Network Analysis of LRH-1 Protein Structure Networks
 - Network Analysis Identifies Mechanisms Driving &Delta;&Delta;G<sub>XSTAL</sub>
 - Relevance to My Professional Experience
