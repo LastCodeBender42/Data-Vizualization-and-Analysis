@@ -34,7 +34,7 @@ where
 
 Physical mechanisms driving the &Delta;&Delta;G were investigated by docking each of the 58 compounds to the 18 crystal structures. Of the 18, 9 were co-crystalized with small molecules and 9 with phospholipids. Then the &Delta;&Delta;G for each of the 58 compounds were averaged for each crystal structure so that a new metric denoted by &Delta;&Delta;G<sub>XSTAL</sub> was created for each structure. As shown in Fig.2, regardless of LRH-1 regulation the phospholipid structures possessed a &Delta;&Delta;G<sub>XSTAL</sub> $\leq$ 1.0 and small molecule structures a &Delta;&Delta;G<sub>XSTAL</sub> $\geq$ 2.0.
 
-It is noteworthy that the characteristic low vs high &Delta;&Delta;G<sub>XSTAL</sub> values for phospholipid and small molecule structures is independent of a docked compound's LRH-1 regulation. This implies that the resulting low vs high &Delta;&Delta;G<sub>XSTAL</sub> values must be driven by conformational shifting due to the small molecule and phospholipid co-crystalization.
+It is noteworthy that the characteristic low vs high &Delta;&Delta;G<sub>XSTAL</sub> values for phospholipid and small molecule structures is independent of a docked compound's LRH-1 regulation. This implies that the resulting low vs high &Delta;&Delta;G<sub>XSTAL</sub> values must be driven by structural changes due to small molecule and phospholipid co-crystalization.
 
 ---
 ![image](https://github.com/LastCodeBender42/Data-Vizualization-and-Analysis/assets/159676076/b06091e1-eaab-4426-8efa-ae64b996c13a)
@@ -43,8 +43,8 @@ It is noteworthy that the characteristic low vs high &Delta;&Delta;G<sub>XSTAL</
 
 ---
 
-# The proposition:
+# 04. The Collaboration:
 
-Previously, I published a [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8246261/pdf/main.pdf) using network analysis to characterize conformational changes in protein structure networks for two other protein systems, constitutive androstane receptor (CAR) and ribonucleotide reductase (RNR). In this work I compared four measures of network centrality to quantify changes in residue-residue contacts from molecular dynamics (MD) simulations. I was welcomed by Dr. Blind to see what if any insights network analysis might yield.
+Previously, I had published a [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8246261/pdf/main.pdf) using network analysis to characterize conformational changes in protein structure networks for two other protein systems, constitutive androstane receptor (CAR) and ribonucleotide reductase (RNR). In this work I compared four measures of network centrality to quantify changes in residue-residue contacts from molecular dynamics (MD) simulations. Based on our discussions Dr. Blind was intrigued by the possibility of using network analysis to understand what structural changes were driving the consistency in low vs high &Delta;&Delta;G<sub>XSTAL</sub> values.
 
 
