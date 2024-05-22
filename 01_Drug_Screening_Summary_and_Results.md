@@ -2,6 +2,15 @@
 
 Drug screening methods are crucial in the process of discovering and developing new medications. These methods involve testing a large number of compounds to identify potential drugs that can interact with specific biological targets. Traditional drug screening techniques include high-throughput screening (HTS), where thousands of compounds are tested in parallel, and in vitro assays, which evaluate the biological activity of compounds in cell cultures or biochemical assays. Recently, network analysis has emerged as a powerful tool in drug discovery. By leveraging computational and mathematical models, network analysis can map and analyze the complex interactions within biological systems. This approach helps identify key nodes and pathways that are critical in disease processes, thereby highlighting potential targets for drug intervention. Additionally, network analysis can predict off-target effects and drug repurposing opportunities by examining the connectivity and relationships between different biological entities. Combining traditional drug screening methods with network analysis enhances the efficiency and effectiveness of the drug discovery process, ultimately leading to the development of more targeted and safer therapeutic options.
 
+## Contents:
+- LRH-1: A Target for Diabetes Treatment
+- Screening and Prioritizing Drug Candidates
+- &Delta;&Delta;G<sub>XSTAL</sub> for Small Molecules vs. Phospholipids
+- Network Analysis of LRH-1 Protein Structure Networks
+- Network Analysis Identifies Mechanisms Driving &Delta;&Delta;G<sub>XSTAL</sub>
+- Relevance to My Professional Experience
+
+
 ## 01. LRH-1: A Target for Diabetes Treatment
 
 Liver receptor homolog-1 (LRH-1) is a nuclear receptor that plays a significant role in regulating various metabolic processes, including glucose homeostasis, making it a promising target for diabetes treatment. Studies have suggested that LRH-1 may be implicated in the pathogenesis of type 2 diabetes mellitus (T2DM). Altered expression or activity of LRH-1 has been observed in animal models of diabetes and in individuals with T2DM. LRH-1 dysregulation may contribute to insulin resistance, impaired glucose tolerance, and other metabolic abnormalities associated with diabetes.
@@ -36,7 +45,7 @@ where
 
 <h3>The significance:</h3> Given the positive association between higher &Delta;&Delta;G values and LRH-1 regulation, then it would make sense that future investigations would prioritize candidates ranked by higher &Delta;&Delta;G.
 
-## 03. Network Analysis of LRH-1 Crystal Structures
+## 03. &Delta;&Delta;G<sub>XSTAL</sub> for Small Molecules vs. Phospholipids
 
 Physical mechanisms driving the &Delta;&Delta;G were investigated by docking each of the 58 compounds to the 18 crystal structures. Of the 18, 9 were co-crystalized with small molecules and 9 with phospholipids. Then the &Delta;&Delta;G for each of the 58 compounds were averaged for each crystal structure so that a new metric denoted by &Delta;&Delta;G<sub>XSTAL</sub> was created for each structure. (Fig 2). regardless of LRH-1 regulation the phospholipid structures possessed a &Delta;&Delta;G<sub>XSTAL</sub> $\leq$ 1.0 and small molecule structures a &Delta;&Delta;G<sub>XSTAL</sub> $\geq$ 2.0.
 
@@ -49,11 +58,11 @@ It is noteworthy that the characteristic low vs. high &Delta;&Delta;G<sub>XSTAL<
 
 ---
 
-## 04. Collaboration
+## 04. Network Analysis of LRH-1 Protein Structure Networks
 
 Previously, I had published a [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8246261/pdf/main.pdf) using network analysis to characterize conformational changes in protein structure networks for two other protein systems, constitutive androstane receptor (CAR) and ribonucleotide reductase (RNR). In this work I compared four measures of network centrality to quantify changes in residue-residue contacts from molecular dynamics (MD) simulations. Based on our discussions Dr. Blind was intrigued by the possibility of using network analysis to understand what structural changes were driving the consistency in low vs high &Delta;&Delta;G<sub>XSTAL</sub> values.
 
-## 05. The Results
+## 05. Network Analysis Identifies Mechanisms Driving &Delta;&Delta;G<sub>XSTAL</sub> 
 
 To begin, I averaged eigenvector centrality values across all amino acids in each secondary structural element of LRH-1. Then I applied principal component analysis to analyze this multi-dimensional data. I found that the variance in PC1 formed two distinct clusters: 1) low &Delta;&Delta;G<sub>XSTAL</sub> structures bound by phospholipids and 2)  high &Delta;&Delta;G<sub>XSTAL</sub> structures bound by synthetic small molecules. (Fig 3A). This result demonstrates that the topology, or architecture, of the PSNs reflects the unique underlying structure of the two groups of crystal structures, small molecule vs. phospholipid.
 
@@ -66,6 +75,6 @@ Next, I examined the network edges that are unique to each of the two groups of 
 
 ---
 
-## 06. Significance of This Project to My Background
+## 06. Relevance to My Professional Experience
 
 I am not a structural biologist. I do not have a background in structural biology. However, I have demonstrated the ability to apply my analytical skill set to highly specialized fields to generate results that give explanation to complex phenomena. 
