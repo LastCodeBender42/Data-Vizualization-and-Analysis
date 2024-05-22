@@ -3,7 +3,7 @@
 Drug screening methods are crucial in the process of discovering and developing new medications. These methods involve testing a large number of compounds to identify potential drugs that can interact with specific biological targets. Traditional drug screening techniques include high-throughput screening (HTS), where thousands of compounds are tested in parallel, and in vitro assays, which evaluate the biological activity of compounds in cell cultures or biochemical assays. Recently, network analysis has emerged as a powerful tool in drug discovery. By leveraging computational and mathematical models, network analysis can map and analyze the complex interactions within biological systems. This approach helps identify key nodes and pathways that are critical in disease processes, thereby highlighting potential targets for drug intervention. Additionally, network analysis can predict off-target effects and drug repurposing opportunities by examining the connectivity and relationships between different biological entities. Combining traditional drug screening methods with network analysis enhances the efficiency and effectiveness of the drug discovery process, ultimately leading to the development of more targeted and safer therapeutic options.
 
 ## Contents:
-- # [LRH-1: A Target for Diabetes Treatment](#lrh-1-a-target-for-diabetes-treatment)
+- [LRH-1: A Target for Diabetes Treatment](#lrh-1-a-target-for-diabetes-treatment)
 - Screening and Prioritizing Drug Candidates
 - &Delta;&Delta;G<sub>XSTAL</sub> for Small Molecules vs. Phospholipids
 - Network Analysis of LRH-1 Protein Structure Networks
