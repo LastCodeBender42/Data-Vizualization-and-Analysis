@@ -6,6 +6,8 @@ Network centrality metrics are crucial for quantifying the topology of biologica
 - [Network Centrality as a Metric of Topology](#network-centrality-as-a-metric-of-topology)
 - [Betweenness Centrality](#betweenness-centrality)
 - [Closeness Centrality](#closeness-centrality)
+- [Degree Centrality](#degree-centrality)
+- [Eigenvector Centrality](#eigenvector-centrality)
 
 ## Network Centrality as a Metric of Topology
 
