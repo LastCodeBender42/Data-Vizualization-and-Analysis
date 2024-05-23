@@ -1,4 +1,4 @@
-# Network Centrality Metics
+![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/108a033f-2eef-4fe9-84b9-491270555635)# Network Centrality Metics
 
 Network centrality metrics are crucial for quantifying the topology of biological systems, offering profound insights into the roles and significance of various components within these complex networks. These metrics, such as degree centrality, betweenness centrality, and closeness centrality, help identify key nodes that may represent critical proteins, genes, or metabolites in biological pathways. By evaluating the importance and influence of these nodes, researchers can pinpoint potential targets for therapeutic intervention and understand the underlying mechanisms of disease. Degree centrality highlights nodes with numerous direct connections, indicating their potential influence on network stability and function. Betweenness centrality identifies nodes that act as critical connectors or hubs, facilitating communication and interaction within the network. Closeness centrality measures how efficiently information spreads from a node to all other nodes, reflecting its overall accessibility within the network. By leveraging these centrality metrics, scientists can dissect the intricate architecture of biological systems, leading to more targeted and effective approaches in drug discovery, disease diagnosis, and treatment development.
 
@@ -19,12 +19,12 @@ Betweenness Centrality ($BC$) is a measure that utilizes the definition of short
 B(v_i) = \frac{\sum s_i}{S(G)}
 ```
 
-where $s_i$ denotes the set of shortest paths that include vi and $S(G)$ denotes the complete set
-of shortest paths for a random graph $G$. Vertices with the large BC are understood to be
-important for maintaining the global connectivity of the graph. Vertices with larger $BC$ also
-decrease the overall average path length and diameter of the graph. $BC$ also contributes to
-the rate of diffusion on graphs. Vertices with large $BC$ increase the rate of diffusion across
-the graph due to reduced average path lengths.
+where $s_i$ denotes the set of shortest paths that include vi and $S(G)$ denotes the complete set of shortest paths for a random graph $G$. Vertices with the large BC are understood to be important for maintaining the global connectivity of the graph. Vertices with larger $BC$ also decrease the overall average path length and diameter of the graph. $BC$ also contributes to the rate of diffusion on graphs. Vertices with large $BC$ increase the rate of diffusion across the graph due to reduced average path lengths.
+
+---
+
+
+---
 
 ## Closeness Centrality
 
@@ -62,6 +62,7 @@ which satisfies $Av = \lambda v$. The “significance” of node $v_i$ is define
 
 ---
 
-![Screen Shot 2024-05-23 at 10 24 40 AM](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/9d43edb5-4ce9-46e9-a3aa-b25bb49f996e)
+![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/aa66fab2-11aa-4d59-8c6a-b43ae239401a)
+
 
 ---
