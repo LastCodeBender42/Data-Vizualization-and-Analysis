@@ -23,6 +23,7 @@ where $s_i$ denotes the set of shortest paths that include vi and $S(G)$ denotes
 
 ---
 
+<img width="582" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/2395507f-858c-438d-8034-2846928734b0">
 
 ---
 
@@ -40,6 +41,12 @@ where $d(v_i, v_j)$ is the distance between $v_i$ and all other vertices $j$ in 
 implies that the largest possible $CC$ for $v_i$ in $G$ is $C(v_i) = 1/N$ and $C(v_i) → 0$ for vertices at
 the graph periphery. Note: A vertex that is close to the center of a graph will have a $CC$ approximately equal to the radius of the graph. Given the definition of $CC$, the question arises as to whether $BC$ and $CC$ are somewhat redundant. It can be the case that nodes that are ‘close’ are also ’between’, but that is not necessarily the case. But, the principle difference between $CC$ and $BC$ are at the end points of the distances measured. $BC$ evaluates the shortest path from $v_h$ through $v_i$ to $v_j$ and $CC$ begins at $v_i$ and evaluates the distanceto every other vertex $v_j$.
 
+---
+
+<img width="539" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/3c864c97-3af4-4d9d-a3d7-c74e51416391">
+
+---
+
 ## Degree Centrality 
 
 Degree Centrality ($DC$) is simplest of the centrality measures to understand intuitively. $DC$ is just the count of all the nodes adjacent to vi or alternatively a count of the edgesincident on $v_i$. Using the definition of counting incident edges, we have
@@ -49,6 +56,13 @@ D(v_i) = \sum_j^N e_{ij}
 ```
 
 It does not require much imagination to rationalize the logic of degree centrality: Things that are important tend to be well-connected. Whether it’s social groups, interstate traffic, or biological pathways, things that are important exert a lot of influence over the system of interest. So, whereas $BC$ and $CC$ communicate influence, vertices with high $DC$ exert influence. Additionally, the topology of graphs with with scale-free degree distribution cohere through the existence of a small number of highly connected nodes. Targeted removal of these vertices can dramatically effect network connectivity resulting in the decomposition of large components smaller components or even bifurcation of the network.
+
+---
+
+<img width="549" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/5a64e5ef-e365-4ec9-aae5-4b49e0688387">
+
+
+---
 
 ## Eigenvector Centrality
 
@@ -62,7 +76,17 @@ which satisfies $Av = \lambda v$. The “significance” of node $v_i$ is define
 
 ---
 
-![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/aa66fab2-11aa-4d59-8c6a-b43ae239401a)
+<img width="539" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/075c5004-0c94-482e-8b0e-e241583b183a">
 
+
+---
+
+
+
+## Comparing Centrality Metrics  
+
+---
+
+<img width="748" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/b8eb6994-7c47-4904-a415-ebd186c66e50">
 
 ---
