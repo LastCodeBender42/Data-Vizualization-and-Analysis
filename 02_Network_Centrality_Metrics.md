@@ -6,10 +6,12 @@
 
 Betweenness Centrality (BC) is a measure that utilizes the definition of shortest path to assign significance to vertices. In descriptive terms, the BC of a vertex $v_i$ is the ratio of the number of shortest paths incident on vi to the total number of shortest path lengths in the network. Therefore, the BC evaluated for any vertex $v_i$ is equal to the proportion
 
-$$B(v_i) = \frac{\sum s_i}{S(G)}$$
+```math
+B(v_i) = \frac{\sum s_i}{S(G)}
+```
 
-where si denotes the set of shortest paths that include vi and S(G) denotes the complete set
-of shortest paths for a random graph G. Vertices with the large BC are understood to be
+where $s_i$ denotes the set of shortest paths that include vi and $S(G)$ denotes the complete set
+of shortest paths for a random graph $G$. Vertices with the large BC are understood to be
 important for maintaining the global connectivity of the graph. Vertices with larger BC also
 decrease the overall average path length and diameter of the graph. BC also contributes to
 the rate of diffusion on graphs. Vertices with large BC increase the rate of diffusion across
@@ -20,12 +22,11 @@ the graph due to reduced average path lengths.
 Closeness Centrality (CC) is a measure that identifies vertices that have the shortest
 paths to all other nodes. In other words, these are the vertices that are at the geodesic
 “center” of the graph. CC is defined as
-C(vi) = 1
-PN
-j
-d(vi
-, vj )
-, (2.9)
+
+```math
+C(v_i) = 1/\sum_j^N d(v_i,v_j),
+```
+
 where d(vi
 , vj ) is the distance between vi and all other vertices j in G. This definition of CC
 implies that the largest possible CC for vi
