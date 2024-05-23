@@ -33,11 +33,29 @@ the graph periphery. Note: A vertex that is close to the center of a graph will 
 
 ## Degree Centrality 
 
-Degree Centrality ($DC$) is simplest of the centrality measures to understand intuitively.
-$DC$ is just the count of all the nodes adjacent to vi or alternatively a count of the edges
-incident on $v_i$. Using the definition of counting incident edges, we have
+Degree Centrality ($DC$) is simplest of the centrality measures to understand intuitively. $DC$ is just the count of all the nodes adjacent to vi or alternatively a count of the edgesincident on $v_i$. Using the definition of counting incident edges, we have
 
 ```math
 D(v_i) = \sum_j^N e_ij
 ```
+
 It does not require much imagination to rationalize the logic of degree centrality: Things that are important tend to be well-connected. Whether it’s social groups, interstate traffic, or biological pathways, things that are important exert a lot of influence over the system of interest. So, whereas $BC$ and $CC$ communicate influence, vertices with high $DC$ exert influence. Additionally, the topology of graphs with with scale-free degree distribution cohere through the existence of a small number of highly connected nodes. Targeted removal of these vertices can dramatically effect network connectivity resulting in the decomposition of large components smaller components or even bifurcation of the network.
+
+## Eigenvector Centrality
+
+Eigenvector Centrality (EC) builds on the concept of DC. If the vertices that are the most well-connected (highest ranked by degree centrality) exert the most influence on the network, then vertices immediately adjacent to these are likely vertices that are also ”influential”. EC is a concept akin to guilt-by-association. The EC of a vertex vi is proportional to
+
+```math
+E(v_i) = \frac{1}{\lambda} \sum
+```
+
+which satisfies Av = λv. The “significance” of node vi
+is defined by the eigenvector of the
+adjacency matrix A and scaled by the inverse of the associated eigenvalue λ. The entries
+of v are EC. The eigenvalue λ is the largest eigenvalue of the adjacency matrix A. One
+of the consequences of this centrality measure is that in scale-free networks EC ’drives’ the
+centrality value of vertices that are not adjacent to high degree vertices to zero. In other
+words, EC for a vertex may be high because it has many neighbors or because it is adjacent
+to an influential neighbor. For this reason, in scale-free networks, EC tends to result in
+’clusters’ of many vertices of high EC centered on high-degree vertices with large swaths of
+vertices in the network characterized EC values near zero.
