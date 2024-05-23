@@ -50,3 +50,10 @@ E(v_i) = \frac{1}{\lambda} \sum_{j=1}^N A_{ij}v_i
 ```
 
 which satisfies $Av = \lambda v$. The “significance” of node $v_i$ is defined by the eigenvector of the adjacency matrix A and scaled by the inverse of the associated eigenvalue $\lambda$. The entries of $v$ are $EC$ values. The eigenvalue $\lambda$ is the largest eigenvalue of the adjacency matrix $A$. One of the consequences of this centrality measure is that in scale-free networks $EC$ ’drives’ the centrality value of vertices that are not adjacent to high degree vertices to zero. In other words, $EC$ for a vertex may be high because it has many neighbors or because it is adjacent to an influential neighbor. For this reason, in scale-free networks, $EC$ tends to result in ’clusters’ of many vertices of high $EC$ centered on high-degree vertices with large swaths of vertices in the network characterized $EC$ values near zero.
+
+---
+
+<img width="665" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/6f4a3fbe-b1c8-47e1-af8d-77eadae07199">
+
+
+---
