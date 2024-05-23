@@ -62,7 +62,6 @@ which satisfies $Av = \lambda v$. The “significance” of node $v_i$ is define
 
 ---
 
-<img width="665" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/6f4a3fbe-b1c8-47e1-af8d-77eadae07199">
-
+![Screen Shot 2024-05-23 at 10 24 40 AM](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/9d43edb5-4ce9-46e9-a3aa-b25bb49f996e)
 
 ---
