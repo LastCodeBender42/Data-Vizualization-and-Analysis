@@ -14,9 +14,10 @@ Network centrality metrics are crucial for quantifying the topology of biologica
 
 Before reviewing commonly utilized metrics of network centrality, it is probably best to review more basic concepts.
 
-A graph $G$, or network, is composed of two sets of elements: A set of vertices and a set of edges. A standard formal definition of a graph is given as $G = (V, E)$. The set of vertices, or nodes. for a graph $G$ is denoted by $V(G)$. The set of edges is composed of unordered pairs of vertices and is denoted by $E(G)$. Vertices are commonly indicated using the notation $v_1, v_2, v_3,..., v_N$, where N is the size of the vertex set and we write that $(v_1, v_2, v_3,..., v_N) \subset V(G)$. Edges are given by similar notation. Where two vertices $v_i, v_j \in V(G)$ are connected by an edge in G, then the unordered pair hvi
-, vj i ∈ E(G). Vertices that are connected by an edge in a graph are said to be adjacent and the edge connectingtwo vertices is said to be incident. The total number of vertices adjacent to a vertex vi is
-called the vertex degree and is denoted as δvi. There are three coefficients that are used to describe simple random graphs: The number of vertices in the graph V , the number of edges E, and the average vertex degree denoted hδi also called the coordination number z.
+A graph $G$, or network, is composed of two sets of elements: A set of vertices and a set of edges. A standard formal definition of a graph is given as $G = (V, E)$. The set of vertices, or nodes. for a graph $G$ is denoted by $V(G)$. The set of edges is composed of unordered pairs of vertices and is denoted by $E(G)$. Vertices are commonly indicated using the notation $v_1, v_2, v_3,..., v_N$, where N is the size of the vertex set and we write that $(v_1, v_2, v_3,..., v_N) \subset V(G)$. Edges are given by similar notation. Where two vertices $v_i, v_j \in V(G)$ are connected by an edge, the edge is defined as $e_{ij} = (v_i,v_j) \in E(G)$. Vertices that are connected by an edge in a graph are said to be *adjacent* and the edge connecting two vertices is said to be *incident*. The total number of edges connected to a node $v_i$ is
+called the *node degree* and is denoted as $\delta(v_i)$. There are three coefficients that are used to describe networks: The number of nodes, the number of edges, and the average node degree, $<\delta>$.
+
+
 
 ## Betweenness Centrality
 
