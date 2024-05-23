@@ -4,7 +4,7 @@
 
 ## Betweenness Centrality
 
-Betweenness Centrality (BC) is a measure that utilizes the definition of shortest path to assign significance to vertices. In descriptive terms, the BC of a vertex vi is the ratio of the number of shortest paths incident on vi to the total number of shortest path lengths in the network. Therefore, the BC evaluated for any vertex viis equal to the proportion</font
+Betweenness Centrality (BC) is a measure that utilizes the definition of shortest path to assign significance to vertices. In descriptive terms, the BC of a vertex $v_i$ is the ratio of the number of shortest paths incident on vi to the total number of shortest path lengths in the network. Therefore, the BC evaluated for any vertex $v_i$ is equal to the proportion
 
 $$B(v_i) = \frac{\sum s_i}{S(G)}$$
 
