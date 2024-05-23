@@ -8,6 +8,7 @@ Network centrality metrics are crucial for quantifying the topology of biologica
 - [Closeness Centrality](#closeness-centrality)
 - [Degree Centrality](#degree-centrality)
 - [Eigenvector Centrality](#eigenvector-centrality)
+- [Comparing Metrics of Network Centrality](#comparing-metrics-of-network-centrality)
 
 ## Network Centrality as a Metric of Topology
 
@@ -83,7 +84,7 @@ which satisfies $Av = \lambda v$. The “significance” of node $v_i$ is define
 
 
 
-## Comparing Centrality Metrics  
+## Comparing Metrics of Network Centrality  
 
 ---
 
