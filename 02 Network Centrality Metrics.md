@@ -23,7 +23,8 @@ P_s(v_i,v_j) = \min_{ij} p_{ij} \in P_{ij},
 
 where $P_s(v_i,v_j)$ is the subset of minimum path length between $v_i$ and $v_j$ of the set of all possible paths $P_{ij}$. Path lengths are often used in the definition of other network metrics. 
 
-Consider a very simple network. This network has 13 nodes that compose the vertex set $(v_1, v_2,...,v_{13}) \subset V(G)$ and 17 edges that make up the edge set $(e_{1,3}=(v_1,v_3), e_{2,3} = (v_2,v_3),...,e_{12,13} = (v_12,v_13)) \subset E(G)$. Simple inspection will show that this network has a structure, or *topology*. Network topology refers to the arrangement or distributiuon of edges among the nodes. Frequently the topology of a network can be quantified by looking at how network properties are distributed. For example, networks where the degree distribution follows a binomial pattern, then the network topology is likely *homogeneous*, i.e., the edges are uniformly distributed. Where the degree distribution follows a power-law, then the network topology is likely *inhomogeneous*, i.e., nonuniformly distributed, which is what we have with this simple network. 
+Consider a very simple network. This network has 13 nodes that compose the vertex set $(v_1, v_2,...,v_{13}) \subset V(G)$ and 17 edges that make up the edge set $(e_{1,3}=(v_1,v_3), e_{2,3} = (v_2,v_3),...,e_{12,13} = (v_12,v_13)) \subset E(G)$. Simple inspection will show that this network has a structure, or *topology*. Network topology refers to the arrangement or distributiuon of edges among the nodes. Frequently the topology of a network can be quantified by looking at how network properties are distributed. For example, networks where the degree distribution follows a binomial pattern, then the network topology is likely *homogeneous*, i.e., the edges are uniformly distributed. Where the degree distribution follows a power-law, then the network topology is likely *inhomogeneous*, i.e., nonuniformly distributed, which is what we have with this simple network. Using this network as a baseline for comparison, four network centrality properties will be reviewed below and the nodes in the network will be scaled by the network centrality to visualize how that network centrality can be used to evaluate network topology.
+
 
 ---
 
@@ -39,7 +40,7 @@ Betweenness Centrality ($BC$) utilizes concept of shortest path to assign signif
 B(v_i) = \frac{\sum s_i}{S(G)}
 ```
 
-where $s_i$ denotes the set of shortest paths that include vi and $S(G)$ denotes the complete set of shortest paths for a random graph $G$. Vertices with the large BC are understood to be important for maintaining the global connectivity of the graph. Vertices with larger $BC$ also decrease the overall average path length and diameter of the graph. $BC$ also contributes to the rate of diffusion on graphs. Vertices with large $BC$ increase the rate of diffusion across the graph due to reduced average path lengths.
+where $s_i$ denotes the set of shortest paths that include vi and $S(G)$ denotes the complete set of shortest paths for a random graph $G$. Vertices with the large BC are understood to be important for maintaining the global connectivity of the graph. Vertices with larger $BC$ also decrease the overall average path length and diameter of the graph. $BC$ also contributes to the rate of diffusion on graphs. Vertices with large $BC$ increase the rate of diffusion across the graph due to smaller average path lengths.
 
 ---
 
