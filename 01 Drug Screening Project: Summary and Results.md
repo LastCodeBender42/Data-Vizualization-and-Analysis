@@ -22,6 +22,7 @@ Research into LRH-1-targeted drugs involves sophisticated drug screening methods
 
 **Figure 1.** A cartoon representation of the human liver receptor homologue-1 (LRH-1) protein.
 
+####NOTE: A slide presentation of this project can be found [here](https://analysisandinformatics.org/lrh1-presentation)
 ---
 
 ## Screening and Prioritizing Drug Candidates
