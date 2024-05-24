@@ -30,6 +30,7 @@ Consider a very simple network. This network has 13 nodes that compose the verte
 
 <img width="474" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/1ccd3237-9dcb-4bcd-9d09-19cbf74a6a99">
 
+#### NOTE: The Python code for gnerating the network images is [here](#./drug-screening-project/02-network-centrality-metrics-supp.ipynb)
 ---
 
 ## Betweenness Centrality
@@ -46,7 +47,6 @@ where $s_i$ denotes the set of shortest paths that include vi and $S(G)$ denotes
 
 <img width="582" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/2395507f-858c-438d-8034-2846928734b0">
 
-### NOTE: The Python code for gnerating the network images is [here](#./02-network-centrality-metrics-supp.ipynb)
 ---
 
 ## Closeness Centrality
