@@ -30,7 +30,7 @@ Consider a very simple network. This network has 13 nodes that compose the verte
 
 <img width="474" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/1ccd3237-9dcb-4bcd-9d09-19cbf74a6a99">
 
-#### NOTE: The Python code for gnerating the network images is [here](#./02 network centrality metrics supp.ipynb)
+#### NOTE: The Python code for gnerating the network images is [here](02_supp.ipynb)
 ---
 
 ## Betweenness Centrality
