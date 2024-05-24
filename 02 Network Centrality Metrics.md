@@ -21,11 +21,15 @@ called the *node degree* and is denoted as $\delta(v_i)$. There are three coeffi
 P_s(v_i,v_j) = \min_{ij} p_{ij} \in P_{ij},
 ```
 
-where $P_s(v_i,v_j)$ is the subset of minimum paths between $v_i$ and $v_j$ of the set of all possible paths $P_{ij}$. 
+where $P_s(v_i,v_j)$ is the subset of minimum path length between $v_i$ and $v_j$ of the set of all possible paths $P_{ij}$. Path lengths are often used in the definition of other network metrics. 
 
-Consider a very simple network. This network has 13 nodes that compose the vertex set $(v_1, v_2,...,v_{13}) \subset V(G)$ and 17 edges that make up the edge set $(e_{1,3}=(v_1,v_3), e_{2,3}, e_{3,4}, e_{4,5}, e_{4,6}, e_{4,7}, e_{7,8}, e_{8,9}, e_{8,12}, e_{8,13}, e_{9,10}, e_{9,13}, e_{10,11}, e_{10,13}, e_{11,12}, e_{11,13}, e_{12,13}) \subset E(G)$. 
+Consider a very simple network. This network has 13 nodes that compose the vertex set $(v_1, v_2,...,v_{13}) \subset V(G)$ and 17 edges that make up the edge set $(e_{1,3}=(v_1,v_3), e_{2,3} = (v_2,v_3),...,e_{12,13} = (v_12,v_13)) \subset E(G)$. Simple inspection will show that this network has a structure, or *topology*. Network topology refers to the arrangement or distributiuon of edges among the nodes. Frequently the topology of a network can be quantified by looking at how network properties are distributed. For example, networks where the degree distribution follows a binomial pattern, then the network topology is likely *homogeneous*, i.e., the edges are uniformly distributed. Where the degree distribution follows a power-law, then the network topology is likely *inhomogeneous*, i.e., nonuniformly distributed, which is what we have with this simple network. 
 
+---
 
+<img width="474" alt="image" src="https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/1ccd3237-9dcb-4bcd-9d09-19cbf74a6a99">
+
+---
 
 ## Betweenness Centrality
 
