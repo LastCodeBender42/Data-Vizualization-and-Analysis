@@ -13,7 +13,7 @@
 - [Closeness Centrality](#closeness-centrality)
 - [Degree Centrality](#degree-centrality)
 - [Eigenvector Centrality](#eigenvector-centrality)
-- [Comparing Metrics of Network Centrality](#side-by-side-comparison)
+- [Side-by-side Comparison of Four Metrics of Centrality](#side-by-side-comparison-of-four-metrics-of-centrality)
 
 
 # Network Centrality as a Metric of Topology
@@ -314,7 +314,7 @@ plt.show()
 
 ![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/8a5a58b7-19fc-4d88-ac78-45289c244ba1)
 
-# Side-by-side Comparison of Four Centrality Metrics:
+# Side-by-side Comparison of Four Metrics of Centrality:
 ---
 
 ```python
