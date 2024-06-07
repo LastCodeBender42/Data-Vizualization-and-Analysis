@@ -58,6 +58,7 @@ plt.figure(figsize=(8, 6))
 nx.draw(G, pos, with_labels=True, node_color='orange', node_size=1000, edge_color='grey', font_size=16, edgecolors='black', linewidths=2)
 plt.title('Simple Random Network ',fontsize=16)
 plt.show()
+```
 
 ![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/2993883a-0923-45fe-a6f8-6a6b789b0d3c)
 
