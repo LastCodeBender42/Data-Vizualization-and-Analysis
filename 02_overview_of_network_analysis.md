@@ -123,3 +123,129 @@ plt.show()
 ```
 ![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/bf90e37b-9aa9-4644-a141-95b5ed15d160)
 
+# Closeness Centrality:
+---
+Closeness Centrality ($CC$) is a measure that identifies vertices that have the shortest
+paths to all other nodes. In other words, these are the vertices that are at the geodesic
+“center” of the graph. $CC$ is defined as
+
+## $$C(v_i) = 1/\sum_j^N d(v_iv_j),$$
+
+
+where $d(v_i, v_j)$ is the distance between $v_i$ and all other vertices $j$ in $G$. This definition of $CC$
+implies that the largest possible $CC$ for $v_i$ in $G$ is $C(v_i) = 1/N$ and $C(v_i) → 0$ for vertices at
+the graph periphery. Note: A vertex that is close to the center of a graph will have a $CC$ approximately equal to the radius of the graph. Given the definition of $CC$, the question arises as to whether $BC$ and $CC$ are somewhat redundant. It can be the case that nodes that are ‘close’ are also ’between’, but that is not necessarily the case. But, the principle difference between $CC$ and $BC$ are at the end points of the distances measured. $BC$ evaluates the shortest path from $v_h$ through $v_i$ to $v_j$ and $CC$ begins at $v_i$ and evaluates the distanceto every other vertex $v_j$.
+
+Closeness centrality is a crucial metric in network analysis that measures the average shortest path length from a given node to all other nodes in the network. This metric is significant because it provides insight into how quickly information or resources can be disseminated from one node to the entire network. Nodes with high closeness centrality are typically more central and have better access to the rest of the network, making them critical for efficient communication and information spread. In social networks, these nodes often represent influential individuals who can reach others more quickly. In infrastructure networks, such nodes are key to ensuring rapid distribution and connectivity. By identifying nodes with high closeness centrality, network analysts can pinpoint strategic positions for optimizing the flow of information, enhancing robustness, and improving overall network efficiency.
+
+```python
+# Compute the fixed positions for the nodes
+pos = nx.spring_layout(G, seed=42)  # Use a fixed seed for reproducibility
+
+# Compute closeness centrality
+closeness_centrality = nx.closeness_centrality(G)
+
+# Normalize node sizes based on closeness centrality
+min_size = 400
+max_size = 4000
+closeness_weight = [min_size + (max_size - min_size) * closeness_centrality[node] for node in G.nodes()]
+
+
+# Get a color map
+# cmap = plt.get_cmap('bwr')
+# colors = [cmap(norm_size) for norm_size in sizes]
+
+# Draw the graph with fixed positions
+plt.figure(figsize=(8, 6))
+nx.draw(G, pos, with_labels=True, node_color='orange', node_size=closeness_weight, edge_color='grey', font_size=16, edgecolors='black', linewidths=2)
+plt.title('Network with Node Sizes Weighted by Closeness Centrality',fontsize=16)
+plt.show()
+```
+![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/24c437e6-f326-4725-aa4f-db806f95948c)
+
+## Comparing the simple unweighted network to a network weighted by closeness centrality.
+---
+
+```python
+# Compute the fixed positions for the nodes
+pos = nx.spring_layout(G, seed=42)  # Use a fixed seed for reproducibility
+
+# Calculate centralities
+closeness_centrality = nx.closeness_centrality(G)
+
+# Create subplots
+fig, axs = plt.subplots(1, 2, figsize=(12, 8))
+
+# Plot simple random network
+nx.draw(G, pos, ax=axs[0], node_color='orange', node_size=1000, with_labels=True,edgecolors='black', linewidths=2)
+axs[0].set_title('Unscaled Node Size', fontsize=16)
+
+# Plot closeness centrality
+nx.draw(G, pos, ax=axs[1], node_color='orange', node_size=closeness_weight, with_labels=True, edgecolors='black', linewidths=2)
+axs[1].set_title('Closeness Centrality', fontsize=16)
+
+plt.tight_layout()
+plt.show()
+```
+
+![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/44fd8ddc-73d2-4451-9ea3-6671680b70d3)
+
+# Degree Centrality:
+---
+
+Degree Centrality ($DC$) is simplest of the centrality measures to understand intuitively. $DC$ is just the count of all the nodes adjacent to vi or alternatively a count of the edgesincident on $v_i$. Using the definition of counting incident edges, we have
+
+## $$D(v_i) = \sum_j^N e_{ij}$$
+
+
+It does not require much imagination to rationalize the logic of degree centrality: Things that are important tend to be well-connected. Whether it’s social groups, interstate traffic, or biological pathways, things that are important exert a lot of influence over the system of interest. So, whereas $BC$ and $CC$ communicate influence, vertices with high $DC$ exert influence. Additionally, the topology of graphs with with scale-free degree distribution cohere through the existence of a small number of highly connected nodes. Targeted removal of these vertices can dramatically effect network connectivity resulting in the decomposition of large components smaller components or even bifurcation of the network.
+
+
+Degree centrality is a fundamental metric in network analysis that measures the number of direct connections a node has to other nodes in the network. This metric is significant because it highlights the most connected or influential nodes within the network, often referred to as hubs. Nodes with high degree centrality have extensive ties and are crucial for maintaining the network's structural integrity and facilitating communication. In social networks, these nodes represent individuals with many social ties, playing pivotal roles in spreading information and influence. In biological networks, such as protein interaction networks, nodes with high degree centrality often correspond to essential proteins involved in multiple biological processes. By identifying nodes with high degree centrality, analysts can understand key points of connectivity and influence, which can be vital for network optimization, targeted interventions, and understanding the network's resilience to disruptions.
+
+```python
+# Compute the fixed positions for the nodes
+pos = nx.spring_layout(G, seed=42)  # Use a fixed seed for reproducibility
+
+# Compute degree centrality
+degree_centrality = nx.degree_centrality(G)
+
+# Normalize node sizes based on degree centrality
+min_size = 40
+max_size = 8000
+degree_weight = [min_size + (max_size - min_size) * degree_centrality[node] for node in G.nodes()]
+
+# Normalize sizes for color mapping
+normalized_sizes = [float(i - min(sizes)) / (max(sizes) - min(sizes)) for i in sizes]
+
+# Get a color map
+# cmap = plt.get_cmap('bwr')
+# colors = [cmap(norm_size) for norm_size in normalized_sizes]
+
+# Draw the graph with fixed positions and colored nodes
+plt.figure(figsize=(8, 6))
+nx.draw(G, pos, with_labels=True, node_color='orange', node_size=degree_weight, edge_color='grey', font_size=16, edgecolors='black', linewidths=2)
+plt.title('Network with Node Sizes and Colors Based on Degree Centrality',fontsize=16)
+plt.show()
+```
+![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/acaad9e7-65d9-4ea6-8bf2-80ebf83dd4a8)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
