@@ -230,9 +230,161 @@ plt.show()
 ```
 ![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/acaad9e7-65d9-4ea6-8bf2-80ebf83dd4a8)
 
+## Comparing the simple unweighted network to a network weighted by degree centrality.
+---
 
+```python
+# Compute the fixed positions for the nodes
+pos = nx.spring_layout(G, seed=42)  # Use a fixed seed for reproducibility
 
+# Create subplots
+fig, axs = plt.subplots(1, 2, figsize=(12, 8))
 
+# Plot simple random network
+nx.draw(G, pos, ax=axs[0], node_color='orange', node_size=1000, with_labels=True,edgecolors='black', linewidths=2)
+axs[0].set_title('Unscaled Node Size', fontsize=16)
+
+# Plot degree centrality
+nx.draw(G, pos, ax=axs[1], node_color='orange', node_size=degree_weight, with_labels=True, edgecolors='black', linewidths=2)
+axs[1].set_title('Degree Centrality', fontsize=16)
+
+plt.tight_layout()
+plt.show()
+```
+![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/6ce76fe5-3dc0-433f-b57d-b7ac5efd8a0f)
+
+# Eigenvector Centrality:
+---
+Eigenvector Centrality ($EC$) builds on the concept of DC. If the vertices that are the most well-connected (highest ranked by degree centrality) exert the most influence on the network, then vertices immediately adjacent to these are likely vertices that are also ”influential”. $EC$ is a concept akin to guilt-by-association. The $EC$ of a vertex $v_i$ is proportional to
+
+## $$E(v_i) = \frac{1}{\lambda} \sum_{j=1}^N A_{ij}v_i$$
+
+which satisfies $Av = \lambda v$. The “significance” of node $v_i$ is defined by the eigenvector of the adjacency matrix A and scaled by the inverse of the associated eigenvalue $\lambda$. The entries of $v$ are $EC$ values. The eigenvalue $\lambda$ is the largest eigenvalue of the adjacency matrix $A$. One of the consequences of this centrality measure is that in scale-free networks $EC$ ’drives’ the centrality value of vertices that are not adjacent to high degree vertices to zero. In other words, $EC$ for a vertex may be high because it has many neighbors or because it is adjacent to an influential neighbor. For this reason, in scale-free networks, $EC$ tends to result in ’clusters’ of many vertices of high $EC$ centered on high-degree vertices with large swaths of vertices in the network characterized $EC$ values near zero.
+
+Eigenvector centrality is a significant measure in network analysis that assesses a node's influence based not only on its direct connections but also on the importance of its neighbors. This centrality considers the principle that connections to highly connected nodes contribute more to a node's centrality than connections to less connected nodes. Consequently, eigenvector centrality identifies nodes that are central to the most influential sub-networks, making it particularly useful in identifying key players in social networks, hubs in transportation networks, and influential nodes in biological networks. It captures the recursive nature of influence, where a node's importance is derived from the importance of the nodes it is connected to. This makes eigenvector centrality an invaluable tool for uncovering the underlying power structures and key influencers within a network, enabling more effective strategies for information dissemination, targeted interventions, and understanding the dynamics of complex systems.
+
+```python
+# Compute the fixed positions for the nodes
+pos = nx.spring_layout(G, seed=42)  # Use a fixed seed for reproducibility
+
+# Compute eigenvector centrality
+eigenvector_centrality = nx.eigenvector_centrality(G)
+
+# Normalize node sizes based on eigenvector centrality
+min_size = 400
+max_size = 8000
+eigenvector_weight = [min_size + (max_size - min_size) * eigenvector_centrality[node] for node in G.nodes()]
+
+# Normalize sizes for color mapping
+normalized_sizes = [float(i - min(sizes)) / (max(sizes) - min(sizes)) for i in sizes]
+
+# Get a color map
+cmap = plt.get_cmap('bwr')
+colors = [cmap(norm_size) for norm_size in normalized_sizes]
+
+# Draw the graph with fixed positions and colored nodes
+plt.figure(figsize=(8, 6))
+nx.draw(G, pos, with_labels=True, node_color='orange', node_size=eigenvector_weight, edge_color='grey', font_size=16, edgecolors='black', linewidths=2)
+plt.title('Network with Node Sizes and Colors Based on Eigenvector Centrality',fontsize=16)
+plt.show()
+```
+![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/5416dea7-89c2-4ce6-89a5-073914386f20)
+
+## Comparing the simple unweighted network to a network weighted by eigenvector centrality.
+---
+
+```python
+# Compute the fixed positions for the nodes
+pos = nx.spring_layout(G, seed=42)  # Use a fixed seed for reproducibility
+
+# Create subplots
+fig, axs = plt.subplots(1, 2, figsize=(12, 8))
+
+# Plot betweenness centrality
+nx.draw(G, pos, ax=axs[0], node_color='orange', node_size=1000, with_labels=True,edgecolors='black', linewidths=2)
+axs[0].set_title('Unscaled Node Size', fontsize=16)
+
+# Plot closeness centrality
+nx.draw(G, pos, ax=axs[1], node_color='orange', node_size=eigenvector_weight, with_labels=True, edgecolors='black', linewidths=2)
+axs[1].set_title('Eigenvector Centrality', fontsize=16)
+
+plt.tight_layout()
+plt.show()
+```
+
+![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/8a5a58b7-19fc-4d88-ac78-45289c244ba1)
+
+# Side-by-side Comparison of Four Centrality Metrics:
+---
+
+```python
+import networkx as nx
+import matplotlib.pyplot as plt
+
+# Create a new graph
+G = nx.Graph()
+
+# Add 13 nodes
+nodes = range(1, 14)
+G.add_nodes_from(nodes)
+
+# Add some edges to connect the nodes
+edges = [
+    (1, 3), (2, 3), (3, 4), (4, 5),
+    (4, 6), (4, 7), (7, 8), (8, 9),
+    (8, 12), (8, 13), (9, 13), (9, 10),
+    (10, 13), (10, 11), (11, 12), (11, 13), (12, 13)
+]
+G.add_edges_from(edges)
+
+# Compute the fixed positions for the nodes
+pos = nx.spring_layout(G, seed=42)  # Use a fixed seed for reproducibility
+
+# Calculate centralities
+betweenness_centrality = nx.betweenness_centrality(G)
+closeness_centrality = nx.closeness_centrality(G)
+degree_centrality = nx.degree_centrality(G)
+eigenvector_centrality = nx.eigenvector_centrality(G)
+
+# Create subplots
+fig, axs = plt.subplots(2, 2, figsize=(12, 8))
+
+# Plot betweenness centrality
+nx.draw(G, pos, ax=axs[0, 0], node_color='orange', node_size=[v * 5000 for v in betweenness_centrality.values()], with_labels=True,edgecolors='black', linewidths=2)
+axs[0, 0].set_title('Betweenness Centrality', fontsize=14)
+
+# Plot closeness centrality
+nx.draw(G, pos, ax=axs[0, 1], node_color='orange', node_size=[v * 5000 for v in closeness_centrality.values()], with_labels=True, edgecolors='black', linewidths=2)
+axs[0, 1].set_title('Closeness Centrality', fontsize=14)
+
+# Plot degree centrality
+nx.draw(G, pos, ax=axs[1, 0], node_color='orange', node_size=[v * 5000 for v in degree_centrality.values()], with_labels=True, edgecolors='black', linewidths=2)
+axs[1, 0].set_title('Degree Centrality', fontsize=14)
+
+# Plot eigenvector centrality
+nx.draw(G, pos, ax=axs[1, 1], node_color='orange', node_size=[v * 5000 for v in eigenvector_centrality.values()], with_labels=True, edgecolors='black', linewidths=2)
+axs[1, 1].set_title('Eigenvector Centrality', fontsize=14)
+
+# # Add border around the entire 2x2 plot
+# for ax in axs.flatten():
+#     ax.spines['top'].set_visible(True)
+#     ax.spines['right'].set_visible(True)
+#     ax.spines['bottom'].set_visible(True)
+#     ax.spines['left'].set_visible(True)
+
+# Create a rectangle patch around the subplot grid
+# rect = plt.Rectangle((0, 0), 1, 1, transform=fig.transFigure, edgecolor='black', linewidth=2, fill=False)
+# fig.patches.append(rect)
+# fig.patch.set_facecolor('ivory')
+
+# Add a title to the entire figure
+fig.suptitle('Comparing Metrics of Network Centrality', fontsize=24)
+
+plt.tight_layout()
+plt.show()
+```
+
+![image](https://github.com/LastCodeBender42/Drug-Screening-Project/assets/159676076/dbda4743-91e6-4e88-8711-822da2b7c4cd)
 
 
 
